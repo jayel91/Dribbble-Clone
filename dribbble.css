@@ -199,6 +199,18 @@ h2 {
 	color: white;
 }
 
+.eye:hover {
+	color: #e5a442;
+}
+
+.comment:hover {
+	color: steelblue;
+}
+
+.heart:hover {
+	color: red;
+}
+
 @media screen and (min-width: 768px) {
     .navbar {
         display: flex;
