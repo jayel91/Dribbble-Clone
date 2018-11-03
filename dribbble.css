@@ -98,7 +98,7 @@ h2 {
 	max-width: 1268px;
 }
 
-[class*="col-"] {
+[class*="col-"], .half {
 	width: 100%;
 	min-height: 1px;
 }
@@ -148,6 +148,10 @@ h2 {
 	box-shadow: 2px 2px 3px 2px #888888;
 }
 
+#views {
+	min-height: 35px;
+}
+
 #views ul {
 	float: right;
 }
@@ -170,12 +174,29 @@ h2 {
 
 .art {
 	height: 25px;
+	border-radius: 15px;
 }
 
 .name {
 	font-weight: bold;
 	color: steelblue;
 	margin-left: 5px;
+}
+
+#reply {
+	display: inline-block;
+	border-radius: 15px;
+	background-color: #95ed9b;
+	height: 30px;
+	width: 30px;
+	margin-top: 5px;
+}
+
+.fa-reply {
+	position: relative;
+	top: 6px;
+	left: 7px;
+	color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,21 +231,39 @@ h2 {
 		top: 10px;
 	}
 
-	[class*="col-"] {
+	[class*="col-"], .half {
 		float: left;
 	}
 
 	.col-1-3 {
 		width: 30%;
 	}
+
+	.half {
+		width: 50%;
+	}
+
+	.pull-right {
+		float: right;
+		text-align: right;
+		padding-right: 50px;
+	}
+
+	.pull-right p {
+		margin: 9px 0;
+	}
+
+	#result{
+		padding-top: 40px;
+	}
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
-	[class*="col-"] {
+	[class*="col-"], .half {
 		float: left;
 	}
 
-	.col-1-2 {
+	.col-1-2, .half {
 		width: 45%;
 	}
 
