@@ -29,7 +29,13 @@ h2 {
 	margin: 0;
 }
 
-#logo {
+/* Navbar -------------------------------*/
+
+.logo {
+    display: inline-block;
+}
+
+#logoPic {
 	height: 50px;
 }
 
@@ -65,10 +71,6 @@ h2 {
     padding: 5px;
 }
 
-.logo {
-    display: inline-block;
-}
-
 .navbar-toggle {
     position: absolute;
     top: 10px;
@@ -82,15 +84,14 @@ h2 {
 	color: white;
 }
 
-.fa-sort {
-	margin-left: 15px;
-}
-
 .active {
     display: block;
     background-color: rgb(47,47,47);
     margin-top: -5px;
 }
+
+/*------------------------------------------*/
+/* Wrapper ---------------------------------*/
 
 #wrapper {
 	color: #777;
@@ -120,6 +121,10 @@ h2 {
 	padding-right: 20px;
 	font-size: 14px;
 	padding-top: 4px;
+}
+
+.fa-sort {
+	margin-left: 15px;
 }
 
 #result {
@@ -200,6 +205,21 @@ h2 {
 	color: white;
 }
 
+.eye:hover {
+	color: #e5a442;
+}
+
+.comment:hover {
+	color: steelblue;
+}
+
+.heart:hover {
+	color: red;
+}
+
+/*----------------------------------------*/
+/* Modal ---------------------------------*/
+
 #lightbox {
 	background-color: rgba(0, 0, 0, 0.8);
 	position: fixed;
@@ -250,17 +270,7 @@ h2 {
 	cursor: pointer;
 }
 
-.eye:hover {
-	color: #e5a442;
-}
-
-.comment:hover {
-	color: steelblue;
-}
-
-.heart:hover {
-	color: red;
-}
+/*--------------------------*/
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
 	[class*="col-"], .half {
