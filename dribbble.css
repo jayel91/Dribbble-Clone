@@ -138,6 +138,7 @@ h2 {
 
 .gallery {
 	width: 100%;
+	cursor: pointer;
 }
 
 #image-wrapper {
@@ -213,9 +214,8 @@ h2 {
 #close {
 	color: #fff;
 	position: absolute;
-	right: 20px;
-	top: 10px;
-	padding: 10px;
+	right: 1%;
+	top: 1%;
 	z-index: 11;
 	font-size: 50px;
 	cursor: pointer;
@@ -234,19 +234,19 @@ h2 {
 
 .prev {
 	color: white;
-	font-size: 50px;
+	font-size: 30px;
 	top: 45%;
 	position: absolute;
-	left: 25%;
+	left: 0;
 	cursor: pointer;
 }
 
 .next {
 	color: white;
-	font-size: 50px;
+	font-size: 30px;
 	top: 45%;
 	position: absolute;
-	right: 25%;
+	right: 0;
 	cursor: pointer;
 }
 
@@ -260,6 +260,34 @@ h2 {
 
 .heart:hover {
 	color: red;
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+	[class*="col-"], .half {
+		float: left;
+	}
+
+	.col-1-2, .half {
+		width: 45%;
+	}
+
+	.pull-right {
+		float: right;
+		text-align: right;
+		padding-right: 50px;
+	}
+
+	.pull-right p {
+		margin: 9px 0;
+	}
+
+	#result{
+		padding-top: 40px;
+	}
+
+	.prev, .next {
+		font-size: 40px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -318,29 +346,16 @@ h2 {
 
 	#result{
 		padding-top: 40px;
-	}
-}
-
-@media screen and (min-width: 500px) and (max-width: 767px) {
-	[class*="col-"], .half {
-		float: left;
+		left: 5%;
 	}
 
-	.col-1-2, .half {
-		width: 45%;
+	.prev {
+		font-size: 50px;
+		left: 5%;
 	}
 
-	.pull-right {
-		float: right;
-		text-align: right;
-		padding-right: 50px;
-	}
-
-	.pull-right p {
-		margin: 9px 0;
-	}
-
-	#result{
-		padding-top: 40px;
+	.next {
+		font-size: 50px;
+		right: 5%;
 	}
 }
